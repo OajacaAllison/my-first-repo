@@ -1,0 +1,22 @@
+.disk1 {
+    width: 500px;
+}
+.disk2 {
+    width: 500px;
+}
+.disk3 {
+    width: 500px;
+}
+.Welcome_records {
+    margin-top: 6% ;
+    margin-left: 5%;
+    position: fixed;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+body {
+    background-color: antiquewhite;
+}
