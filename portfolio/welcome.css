@@ -1,27 +1,40 @@
 .disk1 {     
-  width: 350px; 
+  width: 450px; 
   box-shadow: -2px 5px 20px 5px black;
-  margin-right: 30px
-  ;
+  margin-right: 35px;
 } 
 .disk2 {     
-  width: 350px; 
+  width: 450px; 
   box-shadow: -2px 5px 20px 5px black;
-  margin-right: 30px;
+  margin-right: 35px;
 } 
 .disk3 {     
   box-shadow: -2px 5px 20px 5px black;
-  width: 350px; 
+  width: 450px; 
 } 
 .Welcome_records {
-  margin-left: 15%;
-  margin-top: 10%;
+  margin-left: 8%;
+  margin-top: 11%;
 } 
-  h1 {     
+  header {     
     color: black;     
     text-align: center;     
     font-size: 50px; 
   } 
   body {     
-    background-color: antiquewhite; 
+    background-color: rgb(250, 215, 230); 
   } 
+.disk1:hover {
+  animation: pulsing 2s forwards;
+}
+.disk2:hover {
+  animation: pulsing 2s forwards;
+}
+.disk3:hover {
+  animation: pulsing 2s forwards;
+}
+@keyframes pulsing {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100 {transform: scale(1);}
+}
