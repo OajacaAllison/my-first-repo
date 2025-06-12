@@ -1,4 +1,8 @@
-let work = document.querySelector ("workButton");
-workButton.addEventListener('click', function(){
-    disk1.style.animation= "animation: 3s linear 1s infinite running slide-in;"
-})
+var disk1 = document.getElementsByClassName(disk1)
+var btn = document.getElementsByClassName(btn1)
+
+function move(e) {
+    disk1X += 20
+    disk1.style.position= "relative"
+    disk1.style.transform= "translateX(
+}

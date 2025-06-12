@@ -3,6 +3,12 @@
   box-shadow: -2px 5px 20px 5px black;
   margin-right: 35px;
 } 
+button {
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+}
 .disk2 {     
   width: 450px; 
   box-shadow: -2px 5px 20px 5px black;
