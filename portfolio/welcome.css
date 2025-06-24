@@ -1,49 +1,161 @@
-.disk1 {     
-  width: 450px; 
-  box-shadow: -2px 5px 20px 5px black;
-  margin-right: 35px;
-} 
-button {
-  border: none;
-  cursor: pointer;
-  appearance: none;
-  background-color: inherit;
+.wbutton,
+.abutton,
+.cbutton {
+  height: auto;
+  background-color: transparent;
+  border-color: transparent;
+  padding-inline: 20px;
 }
-.disk2 {     
-  width: 450px; 
+
+.wbutton img {
+  width: 450px;
   box-shadow: -2px 5px 20px 5px black;
-  margin-right: 35px;
-} 
-.disk3 {     
+}
+
+.abutton img {
+  width: 450px;
+  height: auto;
   box-shadow: -2px 5px 20px 5px black;
-  width: 450px; 
-} 
-.Welcome_records {
-  margin-left: 8%;
-  margin-top: 11%;
-} 
-  header {     
-    color: black;     
-    text-align: center;     
-    font-size: 50px; 
-  } 
-  body {     
-    background-color: rgb(250, 215, 230); 
-  } 
-.disk1:hover {
+}
+
+.cbutton img {
+  width: 450px;
+  height: auto;
+  box-shadow: -2px 5px 20px 5px black;
+}
+
+.welcomerecords {
+  margin-left: 7%;
+  margin-top: 15%;
+  position: fixed;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+header {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+}
+
+body {
+  background-color: rgb(250, 215, 230);
+}
+
+.wbutton:hover {
   animation: pulsing 2s forwards;
 }
-.disk2:hover {
+
+.abutton:hover {
   animation: pulsing 2s forwards;
 }
-.disk3:hover {
+
+.cbutton:hover {
   animation: pulsing 2s forwards;
 }
+
 @keyframes pulsing {
-  0% {transform: scale(1);}
-  50% {transform: scale(1.05);}
-  100 {transform: scale(1);}
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100 {
+    transform: scale(1);
+  }
 }
-.disk1 {
-  animation;
+
+.abttx {
+  background-color: rgba(0, 0, 0, 0.544);
+  color: aliceblue;
+  font-size: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  translate: 0% 20%;
+  width: 50%;
+  height: 500px;
+}
+
+.work {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rpmg1 {
+  width: 600px;
+  height: 600px;
+  background-color: rgb(136, 48, 0);
+  translate: 170% -90%;
+}
+
+.backbtn {
+  translate: 560% -1360%;
+  width: 80px;
+  height: 40px;
+}
+
+.backbtn img {
+  width: 80px;
+  height: 50px;
+  translate: -5px -8px
+}
+
+.nextwork {
+  translate: 560% -1360%;
+  width: 80px;
+  height: 40px;
+}
+
+.nextwork img {
+  translate: -10px -8px;
+  width: 80px;
+  height: 50px;
+  transform: rotate(180deg)
+}
+
+.abimg {
+  translate: 49% -110%;
+  width: 560px;
+  animation: 5s linear spinThat infinite;
+}
+
+@keyframes spinThat {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.work {
+  display: none;
+}
+
+.about {
+  display: none;
+}
+
+.contact {
+  display: none;
 }
