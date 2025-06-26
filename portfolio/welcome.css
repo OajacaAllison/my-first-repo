@@ -2,7 +2,9 @@
   margin: 0;
 }
 
+.w {
 
+}
 
 .wbutton,
 .abutton,
@@ -43,8 +45,8 @@
   margin-left: 7%;
   translate: 0% 50%;
   position: fixed;
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 header {
@@ -119,14 +121,39 @@ body {
   translate: 0% -12%;
 }
 
-.work,
+
 .about,
 .contact {
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   translate: 0 -2%;
 }
 
+@-webkit-keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-out-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+}
 
 
 @-webkit-keyframes fade-in {
@@ -223,12 +250,14 @@ body {
   translate: 13% -134%;
   width: 225px;
   animation: 5s linear spinThat infinite;
+  animation-delay: 5s;
 }
 
 .aimg {
   translate: 50% -120%;
   width: 560px;
   animation: 5s linear spinThat infinite;
+  animation-delay: 5s;
 }
 
 .cimg {
@@ -258,29 +287,7 @@ body {
   translate: 0% 400px;
   font-size: 600%;
   display: none;
-  -webkit-animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-out 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .track1,
@@ -289,18 +296,46 @@ body {
   text-align: center;
   font-size: 600%;
   translate: 0% 250%;
-  -webkit-animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  display: none;
-  color: ;
+  -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  visibility: hidden;
+}
+
+@-webkit-keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .track1,
 .track2,
 .track3 {
-  -webkit-animation: fade-out 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-out 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
 
 @-webkit-keyframes fade-out {
   0% {
@@ -334,7 +369,6 @@ body {
 
 .work {
   display: none;
-  translate: 0% -20%;
 }
 
 .about {
@@ -418,7 +452,7 @@ body {
 }
 
 .work {
-  translate: 0% -05%;
+  translate: 0% -15%;
 }
 
 .about {
@@ -439,7 +473,7 @@ body {
   }
 }
 
-.needle2{
+.needle2 {
   translate: 415% -285%;
   width: 20%;
   rotate: -30deg;
@@ -452,13 +486,26 @@ body {
     rotate: -12deg;
   }
 }
+
 .about {
   translate: 0% .01%;
 }
+
 .work {
-  translate: 0% 1%;
+  
 }
+
 #vinyl-gallery {
   transform: scale(105%);
   translate: 1%;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: rotateX(0deg) rotateY(25deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    translate: 0% 145%;
+  }
 }
