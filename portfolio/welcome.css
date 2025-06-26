@@ -1,9 +1,11 @@
 * {
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .w {
-
+  color: #22223b;
 }
 
 .wbutton,
@@ -18,14 +20,14 @@
 .wbutton img {
   width: 450px;
   height: 450px;
-  box-shadow: -2px 5px 20px 5px black;
+  box-shadow: -2px 5px 20px 5px #c9ada7;
 }
 
 .abutton img {
   width: 450px;
   height: 450px;
   height: auto;
-  box-shadow: -2px 5px 20px 5px black;
+  box-shadow: -2px 5px 20px 5px #c9ada7;
 }
 
 .music_header,
@@ -38,26 +40,29 @@
   width: 450px;
   height: 450px;
   height: auto;
-  box-shadow: -2px 5px 20px 5px black;
+  box-shadow: -2px 5px 20px 5px #c9ada7;
 }
 
 .welcomerecords {
-  margin-left: 7%;
-  translate: 0% 50%;
-  position: fixed;
+  translate: 10% 50%;
+  position: absolute;
   -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 header {
-  color: black;
+  color: #22223b;
   text-align: center;
   font-size: 100px;
   translate: 0% 130%;
 }
 
 body {
-  background-color: #F7ECE1;
+  background-color: #f2e9e4;
+  background-image: radial-gradient(#f2e9e4, #c9ada7);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
   font-family: "Abril Fatface", serif;
 }
 
@@ -76,7 +81,7 @@ body {
 .wbutton img:hover,
 .abutton img:hover,
 .cbutton img:hover {
-  box-shadow: -2px 5px 20px 5px #9067C6;
+  box-shadow: -2px 5px 20px 5px #22223b;
 }
 
 @keyframes pulsing {
@@ -86,27 +91,28 @@ body {
 
   50% {
     transform: scale(1.05);
+    box-shadow: #4a4e69;
   }
 
-  100 {
+  100% {
     transform: scale(1);
   }
 }
 
 .wttx {
-  background-color: #5f0fce89;
-  color: black;
-  font-size: 30px;
-  padding: 20px;
-  width: 1500px;
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-size: 25px;
+  padding: 10px;
   border-radius: 10px;
   height: 110px;
-  translate: 5%;
+  translate: 1% -100%;
+  width: 1640px;
 }
 
 .attx {
-  background-color: #0f5fce6f;
-  color: black;
+  background-color: #22223b;
+  color: #f2e9e4;
   font-size: 36px;
   padding: 20px;
   border-radius: 10px;
@@ -155,26 +161,6 @@ body {
   }
 }
 
-
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 .rpmg1 {
   width: 600px;
@@ -267,11 +253,13 @@ body {
 }
 
 .h1 {
-  translate: 0 -140%;
-  background-color: #5f0fce;
+  translate: 0 -90%;
+  background-color: #22223b;
   border-radius: 15px;
   border-style: double;
   border-width: 10px;
+  border-color: #4a4e69;
+  color: #f2e9e4;
 }
 
 .h2 {
@@ -279,7 +267,9 @@ body {
   border-radius: 15px;
   border-style: double;
   border-width: 10px;
-  background-color: #0f5fce;
+  background-color: #22223b;
+  border-color: #4a4e69;
+  color: #f2e9e4;
 }
 
 .play {
@@ -295,10 +285,14 @@ body {
 .track3 {
   text-align: center;
   font-size: 600%;
-  translate: 0% 250%;
+  translate: 0% 300%;
   -webkit-animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation: slide-in-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  visibility: hidden;
+  visibility: collapsed;
+}
+
+track1 {
+  color: #22223b;
 }
 
 @-webkit-keyframes slide-in-top {
@@ -433,7 +427,8 @@ body {
   border-radius: 15px;
   border-style: double;
   border-width: -05px;
-  background-color: #5f0fce;
+  color: #eae0d5;
+  background-color: #22223b;
 }
 
 #vinyl-gallery .vinyl:nth-child(n):hover+.title {
@@ -441,18 +436,18 @@ body {
 }
 
 .w1 {
-  translate: 80% 50%;
+  translate: 80% -150%;
   transform: scale(250%);
 }
 
 .abril-fatface-regular {
   font-family: "Abril Fatface", serif;
-  font-weight: 400;
+  font-weight: lighter;
   font-style: normal;
 }
 
 .work {
-  translate: 0% -15%;
+  translate: 0% -10%;
 }
 
 .about {
@@ -460,7 +455,7 @@ body {
 }
 
 .needle {
-  translate: 415% -175%;
+  translate: 415% -362%;
   width: 20%;
   rotate: -30deg;
   animation: mymove 5s forwards;
@@ -468,7 +463,7 @@ body {
 
 @keyframes mymove {
   100% {
-    translate: 399% -175%;
+    translate: 399% -362%;
     rotate: -12deg;
   }
 }
@@ -491,9 +486,6 @@ body {
   translate: 0% .01%;
 }
 
-.work {
-  
-}
 
 #vinyl-gallery {
   transform: scale(105%);
@@ -504,8 +496,114 @@ body {
   0% {
     transform: rotateX(0deg) rotateY(25deg);
   }
+
   100% {
     transform: rotateX(0deg) rotateY(0deg);
-    translate: 0% 145%;
+    translate: 0% 130%;
+  }
+}
+
+p {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.apsec {
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 500px;
+  translate: 5% 100%;
+  width: 1500px;
+  visibility: ;
+}
+
+.misec {
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 500px;
+  translate: 5% 105%;
+  width: 1500px;
+}
+@keyframes slide-down2 {
+  0% {
+    transform: rotateX(0deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    translate: 2% 245%;
+  }
+}
+.aptxt,
+.mitxt {
+  font-size: 25px;
+  translate: 110%;
+  text-align: left;
+  font-display: auto;
+  width: 600px;
+  height: 1000px;
+  line-height: 1;
+  letter-spacing: 3px;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.list, .list2 {
+  font-size: 25px;
+  translate: 99% -80%;
+  text-align: left;
+  font-display: auto;
+  width: 600px;
+  height: 1000px;
+  line-height: 2;
+}
+
+li {
+  list-style: none;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

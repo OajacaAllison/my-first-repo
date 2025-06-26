@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const wheader = document.querySelector(".w");
     const playing = document.querySelector(".play");
     const t1 = document.querySelector(".track1");
-    const t2 = document.querySelector(".track2")
-    const t3 = document.querySelector(".track3")
-    const song = document.querySelector(".fastercar")
+    const t2 = document.querySelector(".track2");
+    const t3 = document.querySelector(".track3");
+    const song = document.querySelector(".fastercar");
 
     workBtn.addEventListener("click", function () {
         // Slide out welcome + header
@@ -68,23 +68,38 @@ document.addEventListener("DOMContentLoaded", () => {
             workPage.style.display = "inherit";
             workPage.style.webkitAnimation = "slide-in-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
             workPage.style.animation = "slide-in-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
-            document.body.style.backgroundColor = "#e2d2f4";
         }, 8100);
         setTimeout(function () {
             song.loop = true;
             song.currentTime = 0;
             song.play();
-        }, 12700);
+        }, 12500);
     });
     const nextbtn1 = document.querySelector(".nextwork");
     const aphimg = document.querySelector(".aphquiz");
     const wttx = document.querySelector(".wttx"); // make sure this matches!
-    const needlet = document.querySelector(".needle")
+    const needlet = document.querySelector(".needle");
+    const apsec1 = document.querySelector(".apsec");
+    const misim = document.querySelector(".misl");
+    const misec1 = document.querySelector(".misec");
+
     nextbtn1.addEventListener("click", function () {
-        wttx.style.height = "500px";
-        wttx.style.textAlign = "right";
-        aphimg.style.animation = "slide-down 2.5s ease both"
+        aphimg.style.animation = "slide-down 2.5s ease both";
+        needlet.style.position = "absolute";
+        aphimg.style.zIndex = "50%";
+        apsec1.style.visibility = "visible";
+        apsec1.style.webkitAnimation = "2s fade-in forwards";
+        apsec1.style.animation = "2s fade -in forwards";
+        window.scrollBy(0, 650);
     });
+    nextbtn1.addEventListener("dblclick", function(){
+        misim.style.animation = "slide-down2 2.5s ease both";
+        needlet.style.position = "absolute";
+        misim.style.zIndex = "50%";
+        misec1.style.visibility = "visible";
+        misec1.style.webkitAnimation = "2s fade-in forwards";
+        misec1.style.animation = "2s fade -in forwards";
+    })
     aboutBtn.addEventListener("click", function () {
         welcomeDiv.style.display = "none";
         wheader.style.display = "none";
@@ -94,7 +109,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2000)
         setTimeout(function () {
             aboutPage.style.display = "block";
-            document.body.style.backgroundColor = "#dde4ed"
         }, 3000)
     });
     contactBtn.addEventListener("click", function () {
@@ -109,4 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 3000)
     });
 
+    function playAudio() {
+        song.play();
+    }
 });
