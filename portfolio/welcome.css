@@ -301,11 +301,11 @@ body {
 
 @keyframes move {
   0% {
-    translate: 2% -230%;
+    translate: 2% -210%;
   }
 
   100% {
-    translate: 140% -230%;
+    translate: 130% -210%;
   }
 }
 
@@ -651,7 +651,7 @@ p, li {
 
   100% {
     transform: rotateX(0deg) rotateY(0deg);
-    translate: 27% 470%;
+    translate: 28% 470%;
   }
 }
 
@@ -662,7 +662,7 @@ p, li {
 
   100% {
     transform: rotateX(0deg) rotateY(0deg);
-    translate: 40% 580%;
+    translate: 38% 582%;
   }
 }
 
@@ -702,16 +702,42 @@ p, li {
 }
 
 .list,
-.list2, .list3, .list4, .list5 {
-  font-size: 25px;
-  translate: 99% -80%;
+.list2 {
+  font-size: 27px;
+  translate: 99% -86%;
   text-align: left;
   font-display: auto;
   width: 600px;
   height: 1000px;
   line-height: 2;
 }
-
+.list3 {
+  font-size: 27px;
+  translate: 99% -85%;
+  text-align: left;
+  font-display: auto;
+  width: 600px;
+  height: 1000px;
+  line-height: 2;
+}
+.list4 {
+  font-size: 27px;
+  translate: 99% -83%;
+  text-align: left;
+  font-display: auto;
+  width: 600px;
+  height: 1000px;
+  line-height: 2;
+}
+ .list5 {
+  font-size: 27px;
+  translate: 99% -83%;
+  text-align: left;
+  font-display: auto;
+  width: 600px;
+  height: 1000px;
+  line-height: 2;
+ }
 li {
   list-style: none;
 }

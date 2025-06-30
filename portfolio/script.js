@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
             monsec1.style.visibility = "visible";
             monsec1.style.webkitAnimation = "2s fade-in forwards";
             monsec1.style.animation = "2s fade -in forwards";
-            window.scrollBy(0, 1500);
+            window.scrollBy(0, 1700);
         } else if (clickCount === 5) {
             robimgel.style.animation = "slide-down5 2.5s ease both";
             needlet.style.position = "absolute";
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
             robsec1.style.visibility = "visible";
             robsec1.style.webkitAnimation = "2s fade-in forwards";
             robsec1.style.animation = "2s fade -in forwards";
-            window.scrollBy(0, 1700);
+            window.scrollBy(0, 2000);
     }}
 );
     
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const disk3 = document.querySelector('.disk3');
     const cdback1 = document.querySelector(".cdback");
     const reccont = document.querySelector(".recwork");
-    const meow1 = document.querySelector(".meows");
+    const meow1 = document.querySelector(".mauahah");
     const song3 = document.querySelector(".eternity");
 
     contactBtn.addEventListener("click", function () {
@@ -226,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Optional: style it like you want
                 canvas.style.background = "radial-gradient(#4a4e69 35%, #22223b)";
-                canvas.style.translate = "-150% -100%";
+                canvas.style.translate = "-150% -95%";
                 canvas.style.transform = "translateZ(-130deg)";
                 canvas.style.transform = "rotateY(-90deg)";
                 canvas.style.position = "absolute"; // if needed, match .disk3's position or parent styles
