@@ -84,6 +84,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const apsec1 = document.querySelector(".apsec");
     const misim = document.querySelector(".misl");
     const misec1 = document.querySelector(".misec");
+    const ipsec1 = document.querySelector('.ipsec');
+    const hateimg = document.querySelector('.imhateimg');
+    const monsec1 = document.querySelector('.monsec');
+    const monimg = document.querySelector('.artimg');
+    const robsec1 = document.querySelector('.robsec');
+    const robimgel = document.querySelector('.roboimgs');
 
     let clickCount = 0;
 
@@ -106,8 +112,33 @@ document.addEventListener("DOMContentLoaded", () => {
             misec1.style.webkitAnimation = "2s fade-in forwards";
             misec1.style.animation = "2s fade -in forwards";
             window.scrollBy(0, 650);
-        }
-    });
+        } else if (clickCount ===3) {
+            hateimg.style.animation = "slide-down3 2.5s ease both";
+            needlet.style.position = "absolute";
+            hateimg.style.zIndex = "50%";
+            ipsec1.style.visibility = "visible";
+            ipsec1.style.webkitAnimation = "2s fade-in forwards";
+            ipsec1.style.animation = "2s fade -in forwards";
+            window.scrollBy(0, 1500);
+        } else if (clickCount ===4) {
+            monimg.style.animation = "slide-down4 2.5s ease both";
+            needlet.style.position = "absolute";
+            monimg.style.zIndex = "50%";
+            monsec1.style.visibility = "visible";
+            monsec1.style.webkitAnimation = "2s fade-in forwards";
+            monsec1.style.animation = "2s fade -in forwards";
+            window.scrollBy(0, 1500);
+        } else if (clickCount === 5) {
+            robimgel.style.animation = "slide-down5 2.5s ease both";
+            needlet.style.position = "absolute";
+            robimgel.style.zIndex = "50%";
+            robsec1.style.visibility = "visible";
+            robsec1.style.webkitAnimation = "2s fade-in forwards";
+            robsec1.style.animation = "2s fade -in forwards";
+            window.scrollBy(0, 1700);
+    }}
+);
+    
     const song2 = document.querySelector(".always")
     aboutBtn.addEventListener("click", function () {
         // Slide out welcome + header

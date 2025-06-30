@@ -175,7 +175,7 @@ body {
   height: 250px;
   background-image: radial-gradient(#3e2c25 60%, #231915);
   border-radius: 15px;
-  translate: 150% -110%;
+  translate: 150% -360%;
 }
 
 .rpmg3 {
@@ -190,7 +190,7 @@ body {
   width: 50px;
   height: 20px;
   transform: scale(80%);
-  translate: 250% -1350%;
+  translate: 250% -4450%;
 }
 
 .backbtn2 {
@@ -227,7 +227,7 @@ body {
   width: 50px;
   height: 20px;
   transform: scale(80%);
-  translate: 230% -1350%;
+  translate: 230% -4450%;
 }
 
 .nextabout {
@@ -265,7 +265,7 @@ body {
 }
 
 .workimg {
-  translate: 13% -134%;
+  translate: 13% -415%;
   width: 225px;
   animation: 5s linear spinThat infinite;
   animation-delay: 5s;
@@ -512,7 +512,7 @@ track1 {
 
 
 .needle {
-  translate: 415% -362%;
+  translate: 415% -690%;
   width: 20%;
   rotate: -30deg;
   animation: mymove 5s forwards;
@@ -520,7 +520,7 @@ track1 {
 
 @keyframes mymove {
   100% {
-    translate: 399% -362%;
+    translate: 399% -690%;
     rotate: -12deg;
   }
 }
@@ -541,7 +541,7 @@ track1 {
 
 #vinyl-gallery {
   transform: scale(105%);
-  translate: 1%;
+  translate: 2% -269%;
 }
 
 @keyframes slide-down {
@@ -555,7 +555,7 @@ track1 {
   }
 }
 
-p {
+p, li {
   font-family: "Cormorant", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -586,6 +586,42 @@ p {
   visibility: hidden;
 }
 
+.ipsec {
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 500px;
+  translate: 5% 110%;
+  width: 1500px;
+  visibility: hidden;
+}
+
+.monsec {
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 500px;
+  translate: 5% 115%;
+  width: 1500px;
+  visibility: hidden;
+}
+
+.robsec {
+  background-color: #22223b;
+  color: #f2e9e4;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 500px;
+  translate: 5% 120%;
+  width: 1500px;
+  visibility: hidden;
+}
+
 @keyframes slide-down2 {
   0% {
     transform: rotateX(0deg) rotateY(25deg);
@@ -593,17 +629,53 @@ p {
 
   100% {
     transform: rotateX(0deg) rotateY(0deg);
-    translate: 2% 245%;
+    translate: 9% 243%;
+  }
+}
+
+@keyframes slide-down3 {
+  0% {
+    transform: rotateX(0deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    translate: 20% 355%;
+  }
+}
+
+@keyframes slide-down4 {
+  0% {
+    transform: rotateX(0deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    translate: 27% 470%;
+  }
+}
+
+@keyframes slide-down5 {
+  0% {
+    transform: rotateX(0deg) rotateY(25deg);
+  }
+
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+    translate: 40% 580%;
   }
 }
 
 .aptxt,
-.mitxt {
+.mitxt,
+.ihtxt,
+.montxt,
+.robtxt {
   font-size: 25px;
-  translate: 110%;
+  translate: 80%;
   text-align: left;
   font-display: auto;
-  width: 600px;
+  width: 800px;
   height: 1000px;
   line-height: 1;
   letter-spacing: 3px;
@@ -630,7 +702,7 @@ p {
 }
 
 .list,
-.list2 {
+.list2, .list3, .list4, .list5 {
   font-size: 25px;
   translate: 99% -80%;
   text-align: left;
@@ -665,7 +737,7 @@ li {
 }
 
 .work {
-  translate: 0% -5%;
+  translate: 0% -3%;
 }
 
 
