@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const t1 = document.querySelector(".track1");
     const t2 = document.querySelector(".track2");
     const t3 = document.querySelector(".track3");
-    const song = document.querySelector(".fastercar");
+    const song = document.querySelector(".distant");
+    const overlay1 = document.querySelector(".overlay");
 
     workBtn.addEventListener("click", function () {
         // Slide out welcome + header
@@ -20,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         welcomeDiv.style.animation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         wheader.style.webkitAnimation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         wheader.style.animation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        overlay1.style.display = "none";
 
         // Hide them after animation
         setTimeout(function () {
@@ -106,12 +108,14 @@ document.addEventListener("DOMContentLoaded", () => {
             window.scrollBy(0, 650);
         }
     });
+    const song2 = document.querySelector(".always")
     aboutBtn.addEventListener("click", function () {
         // Slide out welcome + header
         welcomeDiv.style.webkitAnimation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         welcomeDiv.style.animation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         wheader.style.webkitAnimation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         wheader.style.animation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        overlay1.style.display = "none";
 
         // Hide them after animation
         setTimeout(function () {
@@ -162,9 +166,9 @@ document.addEventListener("DOMContentLoaded", () => {
             aboutPage.style.animation = "slide-in-top 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         }, 8100);
         setTimeout(function () {
-            song.loop = true;
-            song.currentTime = 0;
-            song.play();
+            song2.loop = true;
+            song2.currentTime = 0;
+            song2.play();
         }, 12500);
     });
     const worktit = document.querySelector(".h3");
@@ -172,13 +176,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const disk3 = document.querySelector('.disk3');
     const cdback1 = document.querySelector(".cdback");
     const reccont = document.querySelector(".recwork");
-    const meow1 = document.querySelector(".meows")
+    const meow1 = document.querySelector(".meows");
+    const song3 = document.querySelector(".eternity");
 
     contactBtn.addEventListener("click", function () {
         aboutBtn.style.webkitAnimation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         workBtn.style.animation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         wheader.style.webkitAnimation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
         wheader.style.animation = "slide-out-bottom 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        overlay1.style.display = "none";
 
         setTimeout(function () {
             disk3.addEventListener('animationend', () => {
@@ -193,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 canvas.style.transform = "translateZ(-130deg)";
                 canvas.style.transform = "rotateY(-90deg)";
                 canvas.style.position = "absolute"; // if needed, match .disk3's position or parent styles
-                canvas.style.animation= "flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both";
+                canvas.style.animation = "flip-vertical-bck 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both";
 
                 // Replace the image in DOM
                 disk3.parentNode.replaceChild(canvas, disk3);
@@ -201,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imgfront.style.webkitAnimation = "slide-left .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
             imgfront.style.animation = "slide-left .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both";
             cdback1.style.display = "block";
-;
+            ;
         }, 1000)
         setTimeout(function () {
             worktit.style.visibility = "visible";
@@ -209,12 +215,58 @@ document.addEventListener("DOMContentLoaded", () => {
             worktit.style.animation = "slide-in-top 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
             reccont.style.display = "block";
         }, 1050)
+        setTimeout(function () {
+            song3.loop = true;
+            song3.currentTime = 0;
+            song3.play();
+        }, 4000)
         contactBtn.classList.add("no-hover");
         contactBtn.style.pointerEvents = "none"; // prevents further clicks
-        setTimeout(function(){
-            meow1.style.animation= "move 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, spinThat 5s linear 4s infinite";
+        setTimeout(function () {
+            meow1.style.animation = "move 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, spinThat 5s linear 4s infinite";
         }, 1100)
-    });;
-
-
+    });
+    const robopic = document.querySelector(".abimg2");
+    const robotxtel = document.querySelector(".robotxt");
+    const gradpc = document.querySelector(".abimg1");
+    const gradtxtel = document.querySelector(".gradtxt");
+    const nextpic = document.querySelector(".abimg3");
+    const nextxtel = document.querySelector(".nextxt");
+    const imgabs1 = document.querySelector(".imgabs");
+    const nextabout = document.querySelector(".nextabout");
+    nextabout.addEventListener('click', function () {
+        window.scrollBy(0, 750);
+        robopic.style.visibility = "visible";
+        robopic.style.animation = "roll-in-left 1s ease-out both";
+        setTimeout(function () {
+            gradpc.style.visibility = "visible";
+            gradpc.style.animation = "roll-in-top 1s ease-out both";
+        }, 500)
+        setTimeout(function () {
+            nextpic.style.visibility = "visible";
+            nextpic.style.animation = "roll-in-right 1s ease-out both";
+        }, 1000)
+    })
+    robopic.addEventListener('mouseover', function () {
+        robotxtel.style.visibility = "visible";
+        robotxtel.style.animation = "swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both";
+    })
+    gradpc.addEventListener('mouseover', function () {
+        gradtxtel.style.visibility = "visible";
+        gradtxtel.style.animation = "swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both";
+    })
+    nextpic.addEventListener('mouseover', function () {
+        nextxtel.style.visibility = "visible";
+        nextxtel.style.animation = "swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both";
+    })
+    const nextcontactbtn = document.querySelector('.nextcontact');
+    const contform = document.querySelector('.contact-container');
+    const credsli = document.querySelector('.creds')
+    nextcontactbtn.addEventListener("click", function(){
+        contform.style.visibility= "visible";
+        contform.style.animation="slide-in-top 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        credsli.style.visibility= "visible";
+        credsli.style.animation="slide-in-top 1.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both";
+        window.scrollBy(0, 750)
+    })
 });
