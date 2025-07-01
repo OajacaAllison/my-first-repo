@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             song.loop = true;
             song.currentTime = 0;
             song.play();
+            song.volume = 20;
         }, 12500);
     });
     const nextbtn1 = document.querySelector(".nextwork");
@@ -200,7 +201,8 @@ document.addEventListener("DOMContentLoaded", () => {
             song2.loop = true;
             song2.currentTime = 0;
             song2.play();
-        }, 12500);
+            song2.volume = 20;
+        }, 13300);
     });
     const worktit = document.querySelector(".h3");
     const imgfront = document.querySelector(".disk3");
@@ -250,7 +252,8 @@ document.addEventListener("DOMContentLoaded", () => {
             song3.loop = true;
             song3.currentTime = 0;
             song3.play();
-        }, 4000)
+            song3.volume = 20;
+        }, 3500)
         contactBtn.classList.add("no-hover");
         contactBtn.style.pointerEvents = "none"; // prevents further clicks
         setTimeout(function () {
