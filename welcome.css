@@ -1151,3 +1151,7 @@ a {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
+.roboimgs {
+  border-radius: 50%;
+}

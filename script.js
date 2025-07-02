@@ -201,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
             song2.loop = true;
             song2.currentTime = 0;
             song2.play();
-            song2.volume = 20;
+            song2.volume = 40;
         }, 13300);
     });
     const worktit = document.querySelector(".h3");
