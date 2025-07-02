@@ -355,7 +355,8 @@ body {
   visibility: collapsed;
 }
 
-track1 {
+.track1,
+.track2 {
   color: #22223b;
 }
 
