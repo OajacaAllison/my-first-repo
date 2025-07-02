@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
             song.loop = true;
             song.currentTime = 0;
             song.play();
-            song.volume = 20;
+            song.volume = 50;
         }, 12500);
     });
     const nextbtn1 = document.querySelector(".nextwork");
@@ -252,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
             song3.loop = true;
             song3.currentTime = 0;
             song3.play();
-            song3.volume = 20;
+            song3.volume = 50;
         }, 3500)
         contactBtn.classList.add("no-hover");
         contactBtn.style.pointerEvents = "none"; // prevents further clicks
