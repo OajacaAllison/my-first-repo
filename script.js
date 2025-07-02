@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", () => {
             song3.currentTime = 0;
             song3.play();
             song3.volume = 80;
-        }, 4000)
+        }, 4900)
         contactBtn.classList.add("no-hover");
         contactBtn.style.pointerEvents = "none"; // prevents further clicks
         setTimeout(function () {
